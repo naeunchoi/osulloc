@@ -1,0 +1,101 @@
+
+/* nav */
+.detail_lnb_wrap{
+    width: 240px;
+    padding: 14px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.detail_lnb_wrap .lnb{
+    width: 100%;
+}
+.detail_lnb_wrap .lnb .search{
+    width: 100%;
+    position: relative;
+}
+.detail_lnb_wrap .lnb .search button{
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    border: none; 
+    background: transparent;
+}
+.detail_lnb_wrap .lnb .search button i{
+    color: rgb(114, 114, 114);
+    font-size: 15px;
+}
+
+.detail_lnb_wrap .lnb .search input{
+    width: 100%;
+    border: 0;
+    background-color: #f6f6f6;
+
+    padding: 10px 14px;
+}
+
+
+
+.detail_lnb_wrap .lnb .detail_link{
+    margin-top: 10px;
+}
+.detail_lnb_wrap .lnb .detail_link a{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.detail_lnb_wrap .lnb .detail_link a:last-child{
+    margin-bottom: 0;
+}
+
+/* chkbox */
+.chk_option{
+   width: 100%;
+}
+.chk_option .chk_title{
+    margin-top: 10px;
+    padding: 7px 0 8px 8px;
+    border-top: 3px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #222;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.chk_option ul{
+    padding: 6px 8px 12px;
+    box-sizing: border-box;
+}
+.chk_option ul li{
+    padding: 4px 0;
+}
+.chk_option ul li label{
+    color: #727272;
+    font-size: 14px;
+}
+.chk_option ul li label input{
+    margin-right: 1%;
+}
+
+
+.chk_option2 ul li{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 46%;
+    margin-right: 2%;
+    position: relative;
+    text-align: center;
+}
+.chk_option2 ul li label{
+    text-align: center;
+}
+.chk_option2 ul li label input{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,366 @@
+/* footer */
+#footer{
+    padding-bottom: 40px !important;
+    background-color: #333 !important;
+}
+
+.footer_wrap{
+    width: 1120px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* footer_top */
+.footer_top{ 
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
+    background: #222;
+}
+/* font-size:12px;
+color:#727272; */
+.footer_top .top_left{
+    width: 56.25%;
+    padding-top: 19px;
+    padding-right: 1%;
+   
+    float: left;
+    font-size: 0;
+    box-sizing: border-box;
+}
+.footer_top .top_left li{
+    vertical-align: top;
+    display: inline-block;
+    line-height: 12px;
+}
+.footer_top .top_left li a{
+    font-size: 12px;
+    color: #727272;
+    padding:0 10px;
+
+    border-right: 1px solid #333;
+}
+.footer_top .top_left li:first-child a{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.footer_top .top_left li:last-child a{
+    border: none;
+    padding-right: 0;
+}
+
+
+.top_right_notice{
+    width:  43.75%;
+    float: right;
+
+    box-sizing: border-box;
+}
+
+.top_right_notice .notice_sec{
+    margin-right: 35px;
+    padding: 18px 33px 0;
+    position: relative;
+}
+
+.top_right_notice .notice_sec .notice_area{
+    width: 389px;
+    height: 16px;
+   
+    overflow:hidden;
+
+    position: relative;
+}
+.top_right_notice .notice_sec .notice_area .notice_txt{
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* text-overflow: ellipsis; */
+}
+
+.top_right_notice .notice_sec .notice_area .notice_txt span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #727272;
+
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    
+    overflow: hidden;
+
+    /* text-overflow: ellipsis; */
+}
+
+
+
+
+.top_right_notice .notice_sec > span{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    font-size: 13px;
+    color: #727272;
+}
+.top_right_notice .notice_sec .notice_more{
+    position: absolute;
+    top: 18px;
+    right: 0;
+    font-size: 13px;
+    color: #727272;
+}
+.top_right_notice .notice_sec .notice_more i{
+    font-size: 13px;
+}
+
+
+/* footer_bot */
+.footer_bot{
+    padding-bottom: 40px;
+    background: #333;
+    overflow: hidden;
+}
+.bot_sub1{
+    padding: 25px 0 20px;
+    border-bottom: 1px solid #727272;
+}
+
+.bot_sub1 .bot_sub1_left{
+   width: 56.25%;
+   display: inline-block;
+}
+.bot_sub1 .bot_sub1_left .sub1_left1{
+  float: left;
+  width: 240px;
+  color: #888;
+}
+
+/* left left */
+.bot_sub1 .bot_sub1_left .sub1_left1 span{
+    display: block;
+}
+.bot_sub1 .bot_sub1_left .sub1_left1 span:first-child{
+    font-size: 14px;
+}
+.bot_sub1 .bot_sub1_left .sub1_left1 .ph_num{
+    font-size: 26px;
+    color: #ccc;
+    font-weight: bold;
+
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.bot_sub1 .bot_sub1_left .sub1_left1 span:last-child{
+    font-size: 12px;
+}
+/* left right */
+
+.bot_sub1 .bot_sub1_left .sub1_left2{
+    float: left;
+}
+
+.bot_sub1 .bot_sub1_left .sub1_left2 li{
+    margin-bottom: 4%
+}
+.bot_sub1 .bot_sub1_left .sub1_left2 li:last-child{
+    margin-bottom: 0;
+}
+
+.bot_sub1 .bot_sub1_left .sub1_left2 li > *{
+    color: #888;
+    font-size: 14px;
+}
+
+.bot_sub1 .bot_sub1_left .sub1_left2 li .bar{
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #888;
+    margin: 0 5px;
+}
+.bot_sub1 .bot_sub1_left .sub1_left2 .email:hover > a{
+    color: #ccc;
+}
+
+
+/* right */
+.bot_sub1 .bot_sub1_right{
+    float: right;
+    width: calc(100% - 56.25%);
+}
+
+
+.bot_sub1 .bot_sub1_right ul{
+    font-size: 0;  
+}
+
+.bot_sub1 .bot_sub1_right ul li{
+   display: inline-block;
+   vertical-align: top;
+   width: 25%;
+   text-align: center;
+}
+.bot_sub1 .bot_sub1_right ul li a{
+    display: block;
+    font-size: 14px;
+    color: #999;
+}
+.bot_sub1 .bot_sub1_right ul li i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 36px;
+    color:#666;
+}
+/* hover */
+.bot_sub1 .bot_sub1_right ul li a:hover > i{
+    color:#ccc;
+}
+
+/* bot_sub2 */
+
+
+/* bot_sub2 left */
+.bot_sub2{
+    padding-top: 1em;
+    overflow: hidden;
+    position: relative;
+}
+.bot_sub2 .bot_sub2_left{
+   float: left;
+   box-sizing: border-box;
+   padding-right: 2%;
+}
+.bot_sub2 .bot_sub2_left ul li{
+    margin-bottom: 1%
+}
+.bot_sub2 .bot_sub2_left ul li span{
+    text-align: left;
+    font-size: 12px;
+    color: #888;
+}
+.bot_sub2 .bot_sub2_left ul li .link a{
+    font-size: 12px;
+    color: #888;
+    position: relative;
+}
+.bot_sub2 .bot_sub2_left ul li .link a i{
+    font-size: 12px;
+    margin-left: 3px;
+}
+.bot_sub2 .bot_sub2_left ul li .link a::after{
+    content: '';
+    display: inline-block;
+    width: 93px;
+    height: 1px;
+    background: #888;
+    position: absolute;
+    top: 102%;
+    left: 0;
+}
+/* hover */
+.bot_sub2 .bot_sub2_left ul li .link:hover a{
+    color: #ccc;
+}
+.bot_sub2 .bot_sub2_left ul li .link:hover a::after{
+   
+    background: #ccc;
+}
+
+
+/* bot_sub2 left */
+.bot_sub2 .bot_sub2_right{
+    width: 33.333%;
+    padding-right: 75px;
+    box-sizing: border-box;
+    float: left;
+
+    margin-left: 3%;
+}
+.bot_sub2 .bot_sub2_right .safe li{
+    margin-bottom: 3%;
+    font-size: 12px;
+    color: #888;
+}
+.bot_sub2 .bot_sub2_right .safe li span{
+    line-height: 1.5em;
+}
+
+.bot_sub2 .bot_sub2_right .safe .confirm a span{
+    font-size: 12px;
+    color: #888;
+    position: relative;
+}
+/* hover */
+.bot_sub2 .bot_sub2_right .safe .confirm a:hover > span{
+    color: #ccc;
+}
+.bot_sub2 .bot_sub2_right .safe .confirm a:hover > span::after
+{   background: #ccc;
+   
+}
+
+.bot_sub2 .bot_sub2_right .safe .confirm a span i{
+    font-size: 12px;
+    margin-left: 3px;
+}
+.bot_sub2 .bot_sub2_right .safe .confirm span::after{
+    content: '';
+    display: inline-block;
+    width: 118px;
+    height: 1px;
+    background: #888;
+    position: absolute;
+    top: 102%;
+    left: 0;
+}
+
+
+/* .bot_sub2  share*/
+
+
+.bot_sub2 .share{
+    position: absolute;
+    top: 30%;
+   right: 2%;
+   width: 100px;
+
+   text-align: center;
+}
+.bot_sub2 .share i{
+    font-size: 30px;
+    color:#111;
+}
+.bot_sub2 .share i:first-child{
+    margin-right: 15px;
+}
+
+
+/* top btn */
+
+.top_btn.on{
+    position: fixed;
+    right: -2%;
+    bottom: 10%;
+
+    animation: top_btn .5s forwards;
+}
+@keyframes top_btn{
+    0%{
+        right: -2%;
+    }
+    100%{
+        right: 2%;
+    }
+}
+
+.top_btn i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4);
+}

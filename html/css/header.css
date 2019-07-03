@@ -1,0 +1,379 @@
+#header{
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   transition: all .5s ease-in-out;
+
+   background-color: #494949;
+    background-image: url('../../common_img/gnb_bg.jpg');
+}
+
+.gnb_bg{
+    width: 100%;
+    background-image: url('../mainP/img/main/counsellor_bg.jpg');
+    height: 0;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    z-index: 1;
+    transition: all .3s;
+
+    
+
+    box-sizing: border-box;
+}
+.header_area{
+    width: 1120px;
+    height: 100px;
+
+    padding-left: 190px;
+    padding-top: 45px;
+    
+    margin: 0 auto;   
+
+    
+
+    position: relative;
+    z-index: 10;
+}
+
+/* logo */
+.logo{
+    position: absolute;
+    top: 13%;
+    left: 0;
+    overflow: hidden;
+    width: auto;
+    transition: top 0.5s;
+}
+.logo > a{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.logo_wrap{
+    position: relative;
+    width: 120px;
+    height: 77px;
+}
+
+.logo1{
+    position: absolute;
+    left: 15%;
+    animation: logo1 6s infinite;
+}
+.logo2{
+    position: absolute;
+    top:30%;
+    animation: logo2 6s infinite;
+}
+@keyframes logo1{
+    0% {
+        top: 78px;
+    }
+    36% {
+        top: 78px;
+    }
+    50% {
+        top: 0;
+    }
+    69.5% {
+        top: 0;
+    }
+    83.5% {
+        top: 78px;
+    }
+    100% {
+        top: 78px;
+    }
+}
+
+@keyframes logo2{
+    0% {
+        top: 30%;
+    }
+    19.5% {
+        top: 30%;
+    }
+    33.5% {
+        top: 78px;
+    }
+    
+    86% {
+        top: 78px;
+    }
+    100% {
+        top: 30%;
+    }
+}
+/* #gnb */
+#gnb{
+    width: 780px;
+    height: 100%;
+  
+    top: 0;
+    left: 0;
+}
+#gnb > ul {
+    height: 100%;
+}
+#gnb > ul > .gnb_title {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    margin-right: 35px;
+}
+
+#gnb > ul > .gnb_title:last-child{
+    margin-right: 0;
+}
+
+#gnb > ul > .gnb_title  > a{
+    display: block;
+    height: 55px;
+
+    line-height: 55px;
+    font-size: 16px;
+
+    padding: 0 9px 0;
+
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    color: #e5e5e5;
+
+    font-family: 'Merriweather', serif;
+}
+/* hover */
+#gnb > ul > .gnb_title  > a:hover{
+    color: #dbe2b5;
+}
+
+
+#gnb > ul > .gnb_title > .gnb_sub{
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+   
+    width: 100%;
+    height: 64px;
+   
+    display: none;
+}
+
+#gnb > ul > .gnb_title > .gnb_sub > li{
+    display: inline-block;
+}
+
+#gnb .gnb_sub li a{
+    /* height: 64px; */
+    padding: 0 15px 0;
+    line-height: 64px;
+    display: block;
+    color: #727272
+}
+/* hover */
+#gnb .gnb_sub li a:hover{
+    color: #000;
+}
+
+
+/* hover */
+#header.active .gnb_bg{height: 63px; border-bottom: 1px solid #dbd6cf;}
+
+#gnb > ul > .gnb_title:hover .gnb_sub{
+    display: block;
+}
+
+/* tri */
+#gnb > ul > .gnb_title:hover  > a:after{
+    content: '';
+    display: block;
+    position: relative;
+    top: -11%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 7px solid #f6f4f0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
+
+ /* form_menu */
+.form_menu{
+    position: absolute;
+    top: 18%;
+    right: 1%;
+}
+.form_menu ul,
+.form_menu ul li,
+.form_menu .lang_wrap{
+    display: inline-block;
+    vertical-align: top;
+}
+.form_menu ul li a,
+.form_menu .lang_wrap span{
+    color: #999;
+    font-size: 14px;
+    padding: 1px 10px;
+}
+
+/* hover */
+.form_menu ul li:hover > a{
+    color: #ccc;
+}
+
+
+/* lang_wrap */
+.form_menu .lang_wrap{
+    width: 100px;
+    padding: 0 0 5px 0;
+    position: relative;
+}
+.form_menu .lang_wrap span{
+    font-size: 15px;
+    color: #ccc;
+    position:relative;
+    display: block;
+}
+.form_menu .lang_wrap span .arrow{
+    position: relative;
+    /* 기준잡기 */
+    position: absolute;
+    right:0;
+    top:0;
+    width: 10px;
+    height: 10px;
+    display: block;
+    transform: rotate(-45deg);
+}
+.form_menu .lang_wrap.on span .arrow{
+    transform: rotate(-225deg);
+    top: 6px;
+}
+
+.form_menu .lang_wrap span .arrow:before,
+.form_menu .lang_wrap span .arrow:after{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background:#ccc;
+}
+.form_menu .lang_wrap span .arrow:before{
+    height: 2px;
+    width: 10px;
+}
+.form_menu .lang_wrap span .arrow:after{
+    width: 2px;
+    height: 10px;
+}
+
+.lang_wrap ul{
+    position: absolute;
+    z-index: 10;
+
+    top: 100%;
+    right: -5px;
+    background: #fff;
+    border: 1px solid #ccc;
+
+    display: none;
+}
+.lang_wrap ul li{
+    width: 100%;
+    padding-bottom: 6px;
+}
+.lang_wrap ul li:last-child{
+    padding-bottom: 0;
+}
+.lang_wrap ul li a{
+    display: block;
+    width: 100%;
+    color: #ccc;
+    padding: 10px 6px 10px 8px;
+}
+
+.lang_wrap ul li:hover a{
+    color: #000;
+    background: #ccc;
+}
+/*
+.form_menu .lang_wrap .arrow::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background: #ccc;
+    transform: translate(-40%,-120%) rotate(-45deg); 
+}
+.form_menu .lang_wrap .arrow::before{
+    content: '';
+    display: inline-block;
+
+    width: 10px;
+    height: 2px;
+    background: #ccc;
+    transform: translateY(-120%) rotate(45deg); 
+}*/
+
+  /*em_menu  */
+/* header_area 에 relative */
+.em_menu{
+    position: absolute;
+    top: 54px;
+    right: 0;
+    bottom: 10px;
+}
+
+.em_menu a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 10px 0 11px;
+    color: #cdcdcd;
+    border-right: 1px solid #302f2f;
+}
+.em_menu a:last-child{
+    border: none;
+}
+.em_menu a i{
+    color: #cdcdcd;
+    font-size: 22px;
+}
+  /*hover  */
+.em_menu a:hover > i{
+    color:#dbe2b5;
+}
+
+
+/* on */
+
+#header.on {
+   top: -45px;
+   transition: all .5s;
+}
+#header.on .logo{
+    top: 48%;
+    left: 4%;
+}
+#header.on .logo_wrap{
+    position: relative;
+    width: 132px;
+    height: 44px;
+}
+
+#header.on .logo1 img{
+     height: 44px;
+}
+   
+#header.on .logo2 img{
+    width: 82px;
+}
+       
